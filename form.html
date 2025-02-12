@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from name="employment" action="send.php" method="post">
+    <table  border="1" cellspacing="2" cellpadding="10">
+        <tr>
+            <td>EMPLOYEMENT APPLICATION</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" name="fname" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" name="lname" maxlength="50"></td>
+        </tr>
+        <tr>
+            <td>POSTION</td>
+            <td>
+                    <select name="positon">
+                    <option value="ENG">ENGINEER</option>
+                    <option value="ACC"> ACCOUNTANT</option>
+                    <option value="FDEV">FRONT DEVELOPER</option>
+                    <option value="BDEV">BACKEND DEVELOPER</option>
+                    </select>
+        </td>
+        </tr>
+        <tr>
+            <td>EXP LEVEL</td>
+            <td>
+                <select>
+                    <option >ENTRY LEVEL</option>
+                    <option >MID LEVEL</option>
+                    <option >INTERMIDATE LEVEL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>JOB TYPE</td>
+            <td>
+                <input type="checkbox" >FULL TIME
+                <input type="checkbox" >FULL TIME 
+                <input type="checkbox" >FULL TIME
+            </td>
+        </tr>
+        <tr>
+            <td>EMPLOYEMET STATUS</td>
+            <td>
+                <input type="radio" name="estatus" value="employed">EMPLOYED
+                <input type="radio" name="estatus" value="unemployed">UNEMPLOYED
+                <input type="radio" name="estatus" value="student">STUDENT
+            </td>
+        </tr>
+        <tr>
+            <td>ACCOUNT COMMENTS</td>
+            <td>
+                <textarea name="comments" cols="45" rows="5">comment</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">SUBMIT</button>
+
+                <button type="reset">RESET</button>
+            </td>
+        </tr>
+    </table>
+</from>
+</body>
+</html>
